@@ -1,0 +1,176 @@
+/* Base styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #FDEFF9; /* Soft Pink */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #FF6F61; /* Coral */
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.greeting-card, .gallery, .messages, .contact {
+    background-color: #FFFFFF; /* White */
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    color: #FF6F61; /* Coral */
+    font-size: 2.5em;
+}
+
+.about-text h2 {
+    color: #FF6F61; /* Coral */
+}
+
+.about-text p, .messages h2, .contact h2 {
+    font-size: 1.1em;
+    line-height: 1.5em;
+    color: #555;
+}
+
+.cute-images, .gallery-images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cute-images img, .gallery-images img {
+    width: 120px; /* Adjust size as needed */
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.cute-images img:hover, .gallery-images img:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #FF6F61; /* Coral */
+    color: white;
+    position: relative;
+}
+
+/* Modal styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.8); /* Black background with opacity */
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%; /* Set width of the image */
+    max-width: 700px; /* Maximum width */
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #FF6F61; /* Change color on hover */
+    cursor: pointer;
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+input, textarea {
+    width: 90%;
+    max-width: 400px;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #FF6F61; /* Coral */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e65c50; /* Darker Coral */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .greeting-card, .gallery, .messages, .contact {
+        width: 90%;
+    }
+
+    .cute-images img, .gallery-images img {
+        width: 100px; /* Adjust size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .cute-images img, .gallery-images img {
+        width: 80px; /* Smaller size for very small screens */
+    }
+}
+#presenter {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #FFFAF0; /* Floral White */
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+#presenter h2 {
+    color: #FF6F61; /* Coral */
+}
+
+#presenter p {
+    font-size: 1.1em;
+    color: #555;
+}
+

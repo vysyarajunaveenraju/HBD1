@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Happy Birthday!</title>
+</head>
+<body>
+    <header>
+        <h1>Happy Birthday, Chelli!</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="messages.html">Messages</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main class="greeting-card">
+        <section id="about">
+            <div class="about-text">
+                <h2>A Special Message Just for You</h2>
+                <p>
+                    Happy Birthday to the most wonderful sister in the world! 
+                    You are my best friend and confidante. I admire your kindness, 
+                    strength, and beauty inside and out. On this special day, I 
+                    want you to know how much I love and cherish you. May your 
+                    year be filled with love, laughter, and endless joy!
+                </p>
+            </div>
+            <div class="cute-images">
+                <img src="chelli1-img.jpg" alt="Cute Teddy Bear" onclick="openModal(this)" />
+                <img src="chelli2-img.jpg" alt="Colorful Balloons" onclick="openModal(this)" />
+                <img src="Memory1.jpg" alt="Birthday Cake" onclick="openModal(this)" />
+            </div>
+        </section>
+
+        <!-- Presenter Details Section -->
+        <section id="presenter">
+            
+            <p>You are my first friend, my best friend, and my forever friend.</p>
+            <h2>Your forever protector</h2>
+            
+        </section>
+    </main>
+
+    <!-- Modal for image display -->
+    <div id="imageModal" class="modal" onclick="closeModal()">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <footer>
+        <p>© 2024 Birthday Wishes</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
